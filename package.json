@@ -13,7 +13,9 @@
   "dependencies": {
     "axios": "^0.24.0",
     "fastify": "^3.24.1",
-    "node-fetch": "2"
+    "handlebars": "^4.7.7",
+    "node-fetch": "2",
+    "point-of-view": "^4.15.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

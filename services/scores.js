@@ -35,6 +35,7 @@ const fetchListScores = () => {
     user.scores.map((score) => {
       return {
         userId: user.id,
+        username: user.username,
         scoreId: score.id,
         value: score.value,
         date: score.date,

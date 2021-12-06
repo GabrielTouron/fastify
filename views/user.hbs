@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kahoot !</title>
+  </head>
+  <body>
+    <h1>{{user.name}}</h1>
+    <h2>{{user.username}}</h2>
+    {{#each user.scores}}
+      <p>{{value}}</p>
+      <p>{{date}}</p>
+      <br />
+    {{/each}}
+
+    <form onsubmit="test(); return false">
+      <div class="form-group">
+        <label>Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder={{user.name}}
+        />
+      </div>
+      <div class="form-group">
+        <label>Username</label>
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          placeholder={{user.username}}
+        />
+      </div>
+
+      <input type="submit">Submit</input>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

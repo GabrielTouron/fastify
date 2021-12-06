@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kahoot !</title>
+  </head>
+  <body>
+    <h1>Kahoot</h1>
+    <h2>Les utilisateurs</h2>
+    {{#each users}}
+      <a href={{link}}>
+        <p>{{id}}</p>
+        <p>{{name}}</p>
+        <p>{{username}}</p>
+      </a>
+      <br />
+    {{/each}}
+
+    <h2>Le podium</h2>
+    {{#each podium}}
+      <p>{{userId}}</p>
+      <p>{{totalScore}}</p>
+      <p>{{username}}</p>
+      <p>{{parties}}</p>
+      <br />
+    {{/each}}
+
+  </body>
+</html>
